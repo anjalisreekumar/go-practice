@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-func printFibonacciSeries(num int){
- a, b := 0 , 1 
+func printFibonacciSeries(num int) {
+	a, b := 0, 1
 
-if num > 0 {
-	fmt.Printf("%d ", a)
-}
-if num > 1 {
-	fmt.Printf("%d ", b)
-}
+	if num > 0 {
+		fmt.Printf("%d ", a)
+	}
+	if num > 1 {
+		fmt.Printf("%d ", b)
+	}
 
-	for i := 2 ; i <= num ; i++ {
+	for i := 2; i <= num; i++ {
 		sum := a + b
 		fmt.Printf("%d ", sum)
 		a = b
